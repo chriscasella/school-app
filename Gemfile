@@ -41,6 +41,8 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'coveralls', require: false
+  gem 'simplecov'
 end
 
 group :development do
