@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root"schools#index"
+  root :to => 'weclome#index'
   devise_for :students do
     resources :assignments
   end
