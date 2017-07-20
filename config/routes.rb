@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :students
+
+  root"schools#index"
+  devise_for :students do
     resources :assignments
+  end
   devise_for :schools
   devise_for :teachers do
     resources :classes do
