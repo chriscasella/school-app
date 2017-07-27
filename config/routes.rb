@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
+  # Landing Page
+  resources :welcome
   root :to => 'weclome#index'
+
+  # 
   devise_for :students do
     resources :assignments
   end
