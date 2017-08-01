@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   resources :welcome
   root :to => 'weclome#index'
 
-  # 
+
+  #
   devise_for :students do
     resources :assignments
   end
