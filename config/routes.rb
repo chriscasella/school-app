@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   # Landing Page
   resources :welcome
-  root :to => 'weclome#index'
+  get '/' => 'welcome#index'
 
 
   #
