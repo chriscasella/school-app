@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  root"schools#index"
+  # Landing Page
+  resources :welcome
+  get '/' => 'welcome#index'
+
+
+  #
   devise_for :students do
     resources :assignments
   end
