@@ -6,5 +6,5 @@ class Student < ApplicationRecord
 
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :school_id, presnce: true, numericality: true
+  validates :school_id, presence: true, numericality: true
 end
