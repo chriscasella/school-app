@@ -3,4 +3,8 @@ class Student < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :school_id, presnce: true, numericality: true
 end
