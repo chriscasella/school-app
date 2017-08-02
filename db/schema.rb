@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170802022312) do
+ActiveRecord::Schema.define(version: 20170802151430) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -53,7 +53,6 @@ ActiveRecord::Schema.define(version: 20170802022312) do
   create_table "students", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "name", null: false
     t.integer "class_id"
     t.integer "parent_id"
     t.string "reset_password_token"
