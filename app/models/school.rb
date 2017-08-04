@@ -4,5 +4,6 @@ class School < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  validates :name, null: false
+
+  validates :name, presence: true
 end
